@@ -1,6 +1,4 @@
-<Bash>
-
-#Roulette payouts 
+#!/usr/bin/python3
 
 import random as r #importing random
 
