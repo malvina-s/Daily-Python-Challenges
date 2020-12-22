@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/python3
 
 import random as r #importing random
 
