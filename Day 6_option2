@@ -1,0 +1,46 @@
+#Roulette payouts 
+
+import random as r #importing random
+
+#making a list including the possible numbers
+numlist = []
+
+numlist.append('00')
+for i in range(0,37):
+	numlist.append(i)
+
+#choosing a random number from the list
+num = r.choice(numlist)
+
+print ('The spin resulted in' ,num, '...')
+
+#Green test
+
+if num==0 or num=='00':
+	print ('Pay ' ,num)
+else:
+    print ('Pay ' ,num)
+
+    #Red-Black test
+
+    if num in (1,3,5,7,9,12,14,16,18,19,21,23,25,27,30,32,34,36):
+    	print ('Pay Red')
+    else:
+    	print ('Pay Black')
+
+    #Even-Odd test
+
+    if isinstance(num/2, int):
+    	print ('Pay Even')
+    else:
+    	print ('Pay Odd')
+
+    #Group test
+
+    if  1<=num and num<=18 :
+    	print ('Pay 1 to 18')
+    else:
+    	print ('Pay 19 to 36')
+
+
+
