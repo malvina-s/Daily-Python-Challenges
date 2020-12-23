@@ -1,4 +1,4 @@
-
+#!/python3
 #No more pennies
 
 #First user input
@@ -6,7 +6,6 @@
 price_txt = input('Enter the price of the product: (blank to quit) : ')
 
 lenp = len(price_txt)
-#!/bin/python3
 total_amount = 0
 remainder = 0
 
