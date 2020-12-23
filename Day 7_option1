@@ -1,0 +1,43 @@
+
+#No more pennies
+
+#First user input
+
+price_txt = input('Enter the price of the product: (blank to quit) : ')
+
+lenp = len(price_txt)
+#!/bin/python3
+total_amount = 0
+remainder = 0
+
+#testing blank prices
+#Start of the loop
+
+while lenp != 0:
+
+    #String to float
+
+    price = float(price_txt)
+    total_amount = total_amount + price
+    price_txt = input('Enter the price of the product: (blank to quit) : ')
+    lenp = len(price_txt)
+    
+
+
+print ('The total cost of all the entered items is: ', total_amount)
+#Pennies and remainder calculation
+price_pennies = total_amount * 100
+remainder = price_pennies%5
+
+
+# rounding the amount up/down or not at all
+if remainder == 0:
+    print('The amount due if a customer pays with cash is: ', total_amount)
+elif remainder < 2.5:
+    total_amount = (price_pennies - remainder)/100
+    print('The amount due if a customer pays with cash is: ', total_amount)
+else:
+    remainder = 5 - remainder
+    total_amount = (price_pennies + remainder)/100
+    print('The amount due if a customer pays with cash is: ', total_amount)
+
