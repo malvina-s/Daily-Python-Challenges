@@ -1,0 +1,43 @@
+#Compute the perimeter of a polygon
+
+import math as m
+
+
+#first input/formating strings to numerical values
+
+x = input('Enter the x part of the coordinate:')
+xa = int(float(x))
+x0 = xa
+y = input('Enter the y part of the coordinate:')
+ya = int(float(y))
+y0 = ya
+
+lenx = len(x)
+
+perimeter = 0
+
+x_ =input('Enter the x part of the coordinate: (blank to quit) :')
+lenx = len(x_)
+if lenx != 0: #testing if sting is empty before turning it into numerical value
+    xb = int(float(x_))
+
+#start of the loop
+while lenx != 0:
+    y_ = input('Enter the y part of the coordinate:')
+    yb = int(float(y_))
+    #distance calculation
+    perimeter = perimeter + m.sqrt(m.pow(xa-xb,2) + m.pow(ya-yb,2))
+    #Initializing
+    xa = xb
+    ya = yb
+    x_ = input('Enter the x part of the coordinate: (blank to quit) :')
+    lenx = len(x_)
+    if lenx != 0:
+        xb = int(float(x_))    
+       
+
+#distance from last point to first point
+perimeter = perimeter + m.sqrt(m.pow(x0-xa,2) + m.pow(y0-ya,2))
+
+print('The perimeter of that polygon is ',perimeter )
+
