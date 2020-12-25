@@ -7,3 +7,5 @@ Day 7 option 1: Pennies problem
 Day 7 option 2: Polygon perimeter
 Day 8 option 1: Zoo admission
 Day 8 option 2: Parity bits
+Day 9 option 1: Caesar cipher
+Day 9 option 2: Palindrome strings
