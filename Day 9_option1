@@ -1,0 +1,28 @@
+#!/python3
+#caesar cipher
+
+message = input('Enter the message: ')
+shift = int(input('Enter the shift amount: '))
+lenmessage = len(message)
+new_message = ''
+ALPHABET = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+alphabet = 'abcdefghijklmnopqrstuvwxyz'
+for i in range(lenmessage):
+    if message[i] in (ALPHABET):
+        node = ALPHABET.rfind(message[i])
+        if node + shift < 26:
+            letter = ALPHABET[node+shift]
+        elif node + shift == 0:
+            letter = ALPHABET[-i-shift]
+        else:
+            letter = ALPHABET[i + shift - 26]
+    else:
+        node = alphabet.rfind(message[i])
+        if node + shift < 26:
+            letter = alphabet[node+shift]
+        elif node + shift == 0:
+            letter =  alphabet[-i-shift]
+        else:
+            letter = alphabet[i + shift - 26]
+    new_message += letter
+print(new_message)
