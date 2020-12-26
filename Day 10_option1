@@ -1,0 +1,27 @@
+#!/python3
+
+#multiplication table
+
+gap = '    '
+first_row = ' '
+small_gap = '   '
+for i in range(1,11):
+    first_row += gap + str(i)
+print (first_row)
+
+
+for i in range (1,11):
+    row = str(i) + gap
+    if i != 10:
+        for x in range (1,11):
+            if len(str(i*x)) == 1:
+                row += str(i*x) + gap
+            else:
+                row += str(i*x) + small_gap
+    else:
+        row = str(i) + small_gap
+        for x in range (1,11):
+            row += str(i*x) + small_gap
+    print (row)
+
+
