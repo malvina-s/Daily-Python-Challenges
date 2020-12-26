@@ -1,0 +1,11 @@
+#!/python3
+
+#greatest common divisor
+
+import math
+
+n = int(input('Enter the first number: '))
+m = int(input('Enter the second number: '))
+
+d = math.gcd(n,m)
+print (d)
