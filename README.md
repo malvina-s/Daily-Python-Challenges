@@ -9,3 +9,5 @@ Day 8 option 1: Zoo admission
 Day 8 option 2: Parity bits
 Day 9 option 1: Caesar cipher
 Day 9 option 2: Palindrome strings
+Day 10 option 1: Multiplication table
+Day 10 option 2: Greatest common divisor
