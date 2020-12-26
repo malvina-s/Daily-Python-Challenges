@@ -11,3 +11,5 @@ Day 9 option 1: Caesar cipher
 Day 9 option 2: Palindrome strings
 Day 10 option 1: Multiplication table
 Day 10 option 2: Greatest common divisor
+Day 11 option 1: Decimal to binary
+Day 11 option 2: Maximum integer
