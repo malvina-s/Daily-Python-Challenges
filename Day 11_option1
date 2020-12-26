@@ -1,0 +1,12 @@
+#!/python3
+#Decimal to binary
+
+number = float(input('Enter the number to convert: '))
+binary = ''
+
+while number != 0:
+    remainder = str(int(number%2))
+    binary = remainder + binary
+    number = number//2
+
+print (binary)
