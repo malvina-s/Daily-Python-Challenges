@@ -1,6 +1,6 @@
 # **Daily-Python-Challenges**
 
-## A repository of educational coding challenges in `Python`
+### A repository of educational coding challenges in `Python`
 
 - Day 6 option 2: _Roulette payouts_
 - Day 7 option 1: _Pennies problem_
