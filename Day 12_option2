@@ -1,0 +1,25 @@
+#!/python3
+
+#A function that properly capitalizes letters in a string
+
+
+def cap_check(string):
+    string = string.strip()
+    new_string = string[0].upper()
+    lenstring = len(string)
+    for i in range(1,lenstring):
+        if string[i-1].isspace() and string[i+1].isspace():
+            letter = string[i].upper()
+
+        elif i>1 and string[i-2] in ["?", "!", "."] and string[i-1].isspace():
+            letter = string[i].upper()
+        else:
+            letter = string[i]
+        new_string += letter
+
+    return new_string
+
+string = input('Enter string to capitalize: ')
+
+
+print(cap_check(string))
