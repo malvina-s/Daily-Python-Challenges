@@ -1,15 +1,16 @@
-# Daily-Python-Challenges
+# **Daily-Python-Challenges**
 
-A repository of educational coding challenges in Python
+##A repository of educational coding challenges in `Python`
+<hr>
 
-Day 6 option 2: Roulette payouts
-Day 7 option 1: Pennies problem
-Day 7 option 2: Polygon perimeter
-Day 8 option 1: Zoo admission
-Day 8 option 2: Parity bits
-Day 9 option 1: Caesar cipher
-Day 9 option 2: Palindrome strings
-Day 10 option 1: Multiplication table
-Day 10 option 2: Greatest common divisor
-Day 11 option 1: Decimal to binary
-Day 11 option 2: Maximum integer
+-Day 6 option 2: _Roulette payouts_
+-Day 7 option 1: _Pennies problem_
+-Day 7 option 2: _Polygon perimeter_
+-Day 8 option 1: _Zoo admission_
+-Day 8 option 2: _Parity bits_
+-Day 9 option 1: _Caesar cipher_
+-Day 9 option 2: _Palindrome strings_
+-Day 10 option 1: _Multiplication table_
+-Day 10 option 2: _Greatest common divisor_
+-Day 11 option 1: _Decimal to binary_
+-Day 11 option 2: _Maximum integer_
