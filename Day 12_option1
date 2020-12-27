@@ -1,0 +1,14 @@
+#!/python3
+
+
+#A fuction that finds the median of three numbers
+
+def median(a, b, c):
+	return sorted([a,b,c])[1]
+
+a= float(input("Enter number: "))
+b= float(input("Enter number: "))
+c= float(input("Enter number: "))
+
+
+print (median(a,b,c))
