@@ -1,0 +1,26 @@
+#!/python3
+
+#A function that tests if a string is integer
+
+def isinteger(string):
+    string = string.strip()
+    if len(string) != 0 :
+        if string.isdigit():
+            a = 'Is integer'
+        elif string[0] in ['+','-'] and string[1:].isdigit():
+            a= "Is integer"
+        else:
+            a = 'Is not integer'
+    else:
+        a = 'Is not integer'
+    return a
+
+
+if __name__ == "__main__":
+
+
+    string =input("Enter string: ")
+    isinteger(string)
+
+    
+    print (isinteger(string))
