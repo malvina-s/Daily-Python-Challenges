@@ -13,3 +13,7 @@
 - Day 10 option 2:  [_Greatest common divisor_](https://github.com/malvina-s/Daily-Python-Challenges/blob/main/Day%2010_option2)
 - Day 11 option 1:  [_Decimal to binary_](https://github.com/malvina-s/Daily-Python-Challenges/blob/main/Day%2011_option1)
 - Day 11 option 2:  [_Maximum integer_](https://github.com/malvina-s/Daily-Python-Challenges/blob/main/Day%2011_option2)
+- Day 12 option 1:  [_Median of three values_](https://github.com/malvina-s/Daily-Python-Challenges/blob/main/Day%2012_option1)
+- Day 12 option 2:  [_Capitalization_](https://github.com/malvina-s/Daily-Python-Challenges/blob/main/Day%2012_option2)
+- Day 13 option 1:  [_isinteger function_](https://github.com/malvina-s/Daily-Python-Challenges/blob/main/Day%2013_option1)
+- Day 13 option 2:  [_isprime function_](https://github.com/malvina-s/Daily-Python-Challenges/blob/main/Day%2013_option2)
