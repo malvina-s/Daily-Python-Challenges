@@ -1,0 +1,29 @@
+#!/python3
+#A function that tests if a number is prime
+
+
+def isprime(number):
+    dividers = ''
+    a=''
+    x = number+1
+    for i in range(1,x):
+        if number%i == 0:
+            dividers+='1'
+    if len(dividers)==2:
+        a = True
+    else:
+        a = False
+    return a
+
+
+if __name__ == "__main__":
+
+
+    number = int(input('Enter an integer: '))
+
+    isprime(number)
+    if isprime(number):
+        print('The integer you entered is prime')
+    else:
+        print('The integer you entered is not prime')
+
