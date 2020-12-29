@@ -17,3 +17,5 @@
 - Day 12 option 2:  [_Capitalization_](https://github.com/malvina-s/Daily-Python-Challenges/blob/main/Day%2012_option2)
 - Day 13 option 1:  [_isinteger function_](https://github.com/malvina-s/Daily-Python-Challenges/blob/main/Day%2013_option1)
 - Day 13 option 2:  [_isprime function_](https://github.com/malvina-s/Daily-Python-Challenges/blob/main/Day%2013_option2)
+- Day 14 option 1:  [_Random password generator_](https://github.com/malvina-s/Daily-Python-Challenges/blob/main/Day%2014_option1)
+- Day 14 option 2:  [_Password check_](https://github.com/malvina-s/Daily-Python-Challenges/blob/main/Day%2014_option2)
