@@ -1,0 +1,33 @@
+#!/python3
+
+#A function that tests if a password is strong/weak
+#Strong password criteria: at least 8 characters long
+#                          at least an uppercase letter
+#                          at least a lowercase letter
+#                          at least a number
+
+def good_password(string):
+	if len(string)>=8:
+		up = 0
+		low = 0
+		num = 0
+		for i in range(len(string)):
+			if string[i].isupper():
+				up+=1
+			elif string[i].islower():
+				low+=1
+			elif string[i].isdigit():
+				num+=1
+		if up >=1 and low>=1 and num>=1:
+			return True
+		else: return False
+	else: return False
+
+if __name__=='__main__':
+	
+	string = input('Enter password to check: ')
+	good_password(string)
+	if good_password(string):
+		print ('Good password')
+	else:
+		print ('Weak password')	
