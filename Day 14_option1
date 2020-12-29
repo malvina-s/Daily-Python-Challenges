@@ -1,0 +1,19 @@
+#!/python3
+
+#A function that generates random password with ASCII characters
+
+import random
+
+def randompassword():
+	password = ''
+	char = ''
+	r = random.choice(range(7,11))
+	for i in range(0,r+1):
+		char = chr(random.choice(range(33,127)))
+		password+=char
+	return(password)
+
+if __name__ == '__main__':
+
+	randompassword()
+	print (randompassword())
