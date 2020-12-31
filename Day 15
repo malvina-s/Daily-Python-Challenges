@@ -1,3 +1,4 @@
+#!python3
 import sys
 
 digits = '0123456789ABCDEF'
