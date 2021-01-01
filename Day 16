@@ -8,15 +8,16 @@ import sys
 
 def fraction_to_lowest_terms(numerator,denominator):
 	divisor = math.gcd(numerator,denominator)
-	numerator = int(numerator / divisor)
-	denominator = int(denominator / divisor)
-	return numerator, denominator
+	numerator_new = int(numerator / divisor)
+	denominator_new = int(denominator / divisor)
+	result = str(numerator)+'/'+str(denominator)+' can be reduced to '+str(numerator_new)+'/'+str(denominator_new)
+	return result
 
 
 if __name__ == '__main__':
 	try:
 		numerator = int(input('Enter the numerator of the fraction: '))
-		
+	
 	except ValueError:
 		print('The number you entered is not integer. Exiting...')
 		sys.exit(1)
@@ -24,10 +25,11 @@ if __name__ == '__main__':
 	try:
 
 		denominator = int(input('Enter the denominator of the fraction: '))
+		
 	except ValueError:
 		print('The number you entered is not integer. Exiting...')
 		sys.exit(2)
 
 
 
-	print(fraction_to_lowest_terms(numerator,denominator))	
+	print(fraction_to_lowest_terms(numerator,denominator))
