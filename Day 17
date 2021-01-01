@@ -1,0 +1,42 @@
+#!/python3
+
+# Reduce measures
+
+
+
+def convert_to_teaspoons(number,unit):
+	if unit == 'cup':
+		teaspoons = 48 * number
+	else:
+		teaspoons = 3 * number
+	return teaspoons
+
+def reduce_measurement(teaspoons):
+	cups = teaspoons // 48
+	cups_str = 'cups'
+	if cups < 2 :
+		cups_str = 'cup'
+
+	tablespoons = (teaspoons-(cups*48)) // 3
+	tablespoons_str = 'tablespoons'
+	if tablespoons < 2 :
+		tablespoons_str = 'tablespoon'
+
+	teaspoons = (teaspoons-(cups * 48)) % 3
+	teaspoons_str = 'teaspoons'
+	if teaspoons < 2 :
+		teaspoons_str = 'teaspoon'
+
+
+
+	result = str(cups) + ' ' + cups_str + ', ' +str(tablespoons) + ' ' + tablespoons_str + ', '+str(teaspoons) + ' ' + teaspoons_str 
+	return result
+    
+
+if __name__ == '__main__':
+	number = (int(input('Enter the number of units: ')))
+	units = input('Enter the unit of measure: ')
+	if units!= 'teaspoon':
+		number = convert_to_teaspoons(number,units)
+		
+	print(reduce_measurement(number))
