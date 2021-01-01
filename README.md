@@ -21,3 +21,4 @@
 - Day 14 option 2:  [_Password check_](https://github.com/malvina-s/Daily-Python-Challenges/blob/main/Day%2014_option2)
 - Day 15:  [_Arbitrary Base Conversion_](https://github.com/malvina-s/Daily-Python-Challenges/blob/main/Day%2015)
 - Day 16:  [_Reduce Fraction to lowest terms_](https://github.com/malvina-s/Daily-Python-Challenges/blob/main/Day%2016)
+- Day 17: [_Reduce measures_](https://github.com/malvina-s/Daily-Python-Challenges/blob/main/Day%2017)
