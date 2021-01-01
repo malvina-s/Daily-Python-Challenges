@@ -1,0 +1,33 @@
+#!/python3
+
+#fraction to lowest terms
+
+
+import math
+import sys 
+
+def fraction_to_lowest_terms(numerator,denominator):
+	divisor = math.gcd(numerator,denominator)
+	numerator = int(numerator / divisor)
+	denominator = int(denominator / divisor)
+	return numerator, denominator
+
+
+if __name__ == '__main__':
+	try:
+		numerator = int(input('Enter the numerator of the fraction: '))
+		
+	except ValueError:
+		print('The number you entered is not integer. Exiting...')
+		sys.exit(1)
+	
+	try:
+
+		denominator = int(input('Enter the denominator of the fraction: '))
+	except ValueError:
+		print('The number you entered is not integer. Exiting...')
+		sys.exit(2)
+
+
+
+	print(fraction_to_lowest_terms(numerator,denominator))	
