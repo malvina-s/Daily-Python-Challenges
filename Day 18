@@ -1,11 +1,12 @@
 #!/python3
 #sorted order
-
+import sys
 
 try:
     x = int(input('Enter an integer (0 to to exit): '))
 except ValueError:
     print ('Your entry was not an integer. Exiting...')
+    sys.exit(1)
 num_list = []
 
 while x != 0:
@@ -14,6 +15,7 @@ while x != 0:
         x = int(input('Enter an integer (0 to to exit): '))
     except ValueError:
         print ('Your entry was not an integer. Exiting...')
+        sys.exit(2)
         
 num_list = sorted(num_list)
 
