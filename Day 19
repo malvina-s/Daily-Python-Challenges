@@ -1,0 +1,33 @@
+#!/python3
+# Remove outliers
+
+
+def values(int_list, n=2):
+    if len(int_list) >= 4:
+        return True
+    else:
+        return False
+
+def remove_outliers(int_list, n=2):
+    
+    print('The original list you entered is: ',int_list)
+
+    for i in range(0,n):
+        int_list.pop()
+        int_list.pop(0)
+
+    print('The list without the outliers is: ',int_list)
+    
+    
+
+if __name__ == '__main__':
+    a = input('Enter the list(example [1,2,3,4]): ')
+    num_list = eval(a)
+    if values(num_list):
+        remove_outliers(num_list)
+    else:
+        print('Error: The list you entered has less than 4 values.')
+
+    
+    
+    
