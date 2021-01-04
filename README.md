@@ -23,3 +23,4 @@
 - Day 16:  [_Reduce Fraction to lowest terms_](https://github.com/malvina-s/Daily-Python-Challenges/blob/main/Day%2016)
 - Day 17: [_Reduce measures_](https://github.com/malvina-s/Daily-Python-Challenges/blob/main/Day%2017)
 - Day 18: [_Sorted List_](https://github.com/malvina-s/Daily-Python-Challenges/blob/main/Day%2018)
+- Day 19: [_Remove outliers_](https://github.com/malvina-s/Daily-Python-Challenges/blob/main/Day%2019)
