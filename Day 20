@@ -1,0 +1,39 @@
+#A programm that avoids duplicates
+
+
+# @param x the word that is given from the user
+# @return a list with all the unique values
+
+def unique_values(x):
+
+	word_list = []
+	while x != '':
+
+		#Checking if the value is unique
+		if x not in word_list:
+			word_list.append(x)
+
+		x = input('Enter a word (blank to stop): ')
+
+	return word_list
+
+
+# @param word_list the list that needs to be printed
+# one value per line
+
+def print_list(word_list):
+
+	for i in range(0,len(word_list)):
+		print (word_list[i])
+
+
+if __name__ == '__main__':
+
+	words = []
+	x = input('Enter a word (blank to stop): ')
+
+	print_list(unique_values(x))
+
+
+
+
