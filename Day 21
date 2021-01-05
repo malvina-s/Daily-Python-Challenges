@@ -1,0 +1,24 @@
+#Negatives, Zeros and Positives
+
+#first user input
+number_str = input('Enter an integer (blank to stop): ')
+number_list = []
+
+#testing if a blank line is entered
+while number_str != '':
+    try:
+        number = int(number_str)
+    except ValueError:
+        #testing if a non integer value is entered
+        #this doesn't apply for blank line
+        print('The value you entered is not an integer.')
+        break
+    number_list.append(number)
+    number_str = input('Enter an integer (blank to stop): ')
+
+#sorting of the number list
+number_list.sort()
+
+#printing every value of the list in each own line
+for i in range(0,len(number_list)):
+    print (number_list[i])
