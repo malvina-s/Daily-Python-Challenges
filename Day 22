@@ -1,0 +1,37 @@
+#!/python3
+# Formatting list
+
+# A function that formats a string list
+# @param string_list the list to format
+def list_format(string_list):
+    # Testing for one, two or more items
+    length = len(string_list)
+    if length == 1:
+        print(string_list[0])
+    elif length == 2:
+        print(string_list[0], ' and ',string_list[1])
+    else:
+        formatted_string = ''
+        for i in range(0,length-2):
+            formatted_string = formatted_string + string_list[i] + ', '
+        formatted_string = formatted_string + string_list[length-2] + ' and ' + string_list[length-1]
+        print(formatted_string)
+
+if __name__ == '__main__':
+
+    # User input
+    string_list = []
+    item = input('Enter item (blank to stop): ')
+    while item != '':
+        string_list.append(item)
+        item = input('Enter item (blank to stop): ')
+        
+    #Testing if the list is empty
+    if len(string_list) != 0:
+        list_format(string_list)
+    else:
+        print('No list to format')
+
+
+    
+            
