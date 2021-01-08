@@ -1,0 +1,23 @@
+#!/python3
+
+import random
+
+def lottery(N = 6):
+	# The set of numbers the lottery has
+	numbers = list(range(1,50))
+
+	selection = []
+
+	# Generate N numbers
+	for i in range(N):
+		new_selection = random.choice(numbers)
+		selection.append(new_selection)
+
+		# Remove the selection from th available selections
+		numbers.remove(new_selection)
+
+	return selection
+
+
+if __name__ == '__main__':
+	print (sorted(lottery()))
