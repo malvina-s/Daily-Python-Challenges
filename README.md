@@ -28,3 +28,4 @@
 - Day 21: [_Negatives, Zeros and Positives_](https://github.com/malvina-s/Daily-Python-Challenges/blob/main/Day%2021)
 - Day 22: [_Formatting a List_](https://github.com/malvina-s/Daily-Python-Challenges/blob/main/Day%2022)
 - Day 23: [_Random Lottery Number_](https://github.com/malvina-s/Daily-Python-Challenges/blob/main/Day%2023)
+- Day 24: [_Shuffling a deck of cards_](https://github.com/malvina-s/Daily-Python-Challenges/blob/main/Day%2024)
