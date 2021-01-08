@@ -1,0 +1,41 @@
+#!/python3
+# Shuffling a deck of cards
+import random
+# A function that creates a deck of 52 cards
+# @return deck an unshuffled list of 52 strings that 
+# each represent a card
+def createDeck():
+    deck=[]
+    characters=['T', 'J', 'Q', 'K', 'A']
+    suits=['s', 'h', 'd', 'c']
+    # Creating cards from 2-9 in every suit
+    for i in range(2,10):
+        for y in suits:
+            card=str(i)+y
+            deck.append(card)
+    # Creating cards with characters in every suit
+    for i in characters:
+        for y in suits:
+            card=i+y
+            deck.append(card)
+    return deck
+# A function that shuffles a deck of cards
+# @param deck a list of strings
+# @return deck a shuffled version of the list in @param
+def shuffle(deck):
+    # picking a random card from the deck
+    # and then swaping with another random card in the deck
+    for i in range(52):
+        card=random.choice(deck)
+        index_a=deck.index(card)
+        index_b=random.choice(range(52))
+        card_b=deck[index_b]
+        deck[index_a], deck[index_b]=deck[index_b], deck[index_a]
+    return deck     
+
+if __name__ == '__main__':
+    # Printing the output 
+    print('Unshuffled deck of cards: ',createDeck())
+    print('Shuffled deck of cards: ',shuffle(createDeck()))
+
+
