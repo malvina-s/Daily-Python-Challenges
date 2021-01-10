@@ -1,0 +1,49 @@
+#!/python3
+# Tokenizing a string
+
+# A function that checks if a '+' or a '-' are operators or not
+# @param whole_string the given string to tokenize
+# @param ind the index of the character we want to check in the string
+# @return True if the character given is an operator
+# @return False if the character given is not an operator
+def isoperator(whole_string, ind):
+    if ind == 0:
+        return False
+    if whole_string[ind] in ('+', '-') and (whole_string[ind - 1] == ')' or whole_string[ind - 1].isnumeric()):
+        return True
+    else:
+        return False
+
+# A function that tokenizes a given string
+# @param string the given string from the user
+# @return tokens a list that contains all the tokens from the string
+def tokenizing_string(string):
+    tokens = []
+    string.strip()
+    prev = ''
+    index = 0
+    for i in string:
+        if i in ('*', '/', '=', '(', ')') or isoperator(string, index):
+            tokens.append(i)
+        if not isoperator(string, index) and i in ('+','-'):
+            prev = i
+        if i.isnumeric() == True and index + 1 == len(string):
+            prev += i
+            tokens.append(prev)
+            prev = ''
+            return tokens
+        if i.isnumeric() == True and string[index + 1].isnumeric() == False:
+            prev += i
+            tokens.append(prev)
+            prev = ''
+        elif i.isnumeric() == True:
+            prev += i
+        index += 1
+    return tokens
+  
+        
+if __name__ == '__main__':
+    # user input
+    string = input('Enter an expression: ')
+    # printing the output
+    print(tokenizing_string(string))
