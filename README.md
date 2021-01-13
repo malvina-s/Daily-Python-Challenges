@@ -30,3 +30,4 @@
 - Day 23: [_Random Lottery Number_](https://github.com/malvina-s/Daily-Python-Challenges/blob/main/Day%2023)
 - Day 24: [_Shuffling a deck of cards_](https://github.com/malvina-s/Daily-Python-Challenges/blob/main/Day%2024)
 - Day 26: [_Tokenizing a string_](https://github.com/malvina-s/Daily-Python-Challenges/blob/main/Day%2026)
+- Day 29: [_Two dice simulation_](https://github.com/malvina-s/Daily-Python-Challenges/blob/main/Day%2029)
