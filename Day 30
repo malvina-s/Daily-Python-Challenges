@@ -1,0 +1,31 @@
+#!/python3
+import string
+# A function that calculates how many unique characters are in a given string
+# @param user_input a string that is given from the user
+# @return counter an integer that represents the unique characters
+def unique_characters(user_input):
+	# Creating a dict
+	occurence = {}
+	for i in string.printable:
+		# Setting the flag for every ASCII printable character 
+		occurence[i] = ['0']
+	# Converting to lowercase so to avoid duplicates
+	user_input = user_input.lower()
+	# striping the string from whitespace and spaces
+	user_input = user_input.replace(' ', '')
+	for i in user_input:
+		# Setting the flag to '1' if a character has occured
+		occurence[i] = ['1']
+	counter = 0
+	for key in occurence:
+		# Adding to the counter
+		# if a character has appeared in the string at least once
+		if occurence[key] == ['1']:
+			counter += 1
+	return counter
+
+
+if __name__ == '__main__':
+	# user input
+	string_from_the_user = input('Enter a string: ')
+	print('Your string has ', unique_characters(string_from_the_user),' unique characters')
