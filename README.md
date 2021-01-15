@@ -32,3 +32,4 @@
 - Day 26: [_Tokenizing a string_](https://github.com/malvina-s/Daily-Python-Challenges/blob/main/Day%2026)
 - Day 29: [_Two dice simulation_](https://github.com/malvina-s/Daily-Python-Challenges/blob/main/Day%2029)
 - Day 30: [_Unique characters_](https://github.com/malvina-s/Daily-Python-Challenges/blob/main/Day%2030)
+- Day 31: [_Anagrams_](https://github.com/malvina-s/Daily-Python-Challenges/blob/main/Day%2031)
