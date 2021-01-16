@@ -21,7 +21,7 @@ if __name__ == '__main__':
 	first_string = input('Enter first string: ')
 	second_string = input('Enter second string: ')
 	# If the strings use the same characters both in kind and number are anagrams
-	if character_count(first_string) == character_count(second_string):
+	if character_check(first_string) == character_check(second_string):
 		print('The strings are anagrams')
 	else:
 		print('The strings are not anagrams')
