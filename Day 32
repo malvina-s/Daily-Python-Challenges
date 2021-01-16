@@ -1,0 +1,40 @@
+#!/python3
+import string
+
+# A function that generates a dict with all the letter point values
+# @return a dict where its keys are the alphabet letters and the values are their point values
+def scrabble_values():
+	point_values = {}
+	for i in string.ascii_uppercase:
+		if i in ('A', 'E', 'I', 'L', 'N', 'O', 'R', 'S', 'T', 'U'):
+			point_values[i] = 1
+		if i in ('D', 'G'):
+			point_values[i] = 2
+		if i in ('B', 'C', 'M', 'P'):
+			point_values[i] = 3
+		if i in ('F', 'H', 'V', 'W', 'Y'):
+			point_values[i] = 4
+		if i == 'K':
+			point_values[i] = 5
+		if i in ('J', 'X'):
+			point_values[i] = 8
+		if i in ('Q', 'Z'):
+			point_values[i] = 10
+	return point_values
+
+# A function that calculates the points of a word
+# @param word a string to calculate the points of its characters
+# @return word_value an integer that represents the point value of a word
+def point_calculation(word):
+	word = word.upper()
+	word_value = 0
+	character_values = scrabble_values()
+	for i in word:
+		word_value += character_values[i]
+	return word_value
+
+if __name__ == '__main__':
+	# User input
+	word_to_test = input('Enter a word: ')
+	# Printing the output
+	print('The value of the word entered is', point_calculation(word_to_test), ' points')
