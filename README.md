@@ -34,3 +34,4 @@
 - Day 30: [_Unique characters_](https://github.com/malvina-s/Daily-Python-Challenges/blob/main/Day%2030)
 - Day 31: [_Anagrams_](https://github.com/malvina-s/Daily-Python-Challenges/blob/main/Day%2031)
 - Day 32: [_Scrabble<sup>TM</sup> Score_](https://github.com/malvina-s/Daily-Python-Challenges/blob/main/Day%2032)
+- Day 33: [_Create a BINGO card_](https://github.com/malvina-s/Daily-Python-Challenges/blob/main/Day%2033)
