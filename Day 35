@@ -1,0 +1,26 @@
+#!/python3
+
+import sys
+
+# Check Command Line parameter filename
+try:
+    filename = sys.argv[1]
+except IndexError:
+    print("Usage:")
+    print("{} <filename>".format(sys.argv[0]))
+    sys.exit(1)
+
+# Check file existence and open file
+try:
+    f = open(filename, 'r')
+except FileNotFoundError:
+    print("File '{}' does not exist".format(filename))
+    sys.exit(2)
+
+# Read file as a list of lines
+lines = f.readlines()
+f.close()
+
+# Print last 10 lines
+for l in lines[-10:]:
+    print (l.strip())
