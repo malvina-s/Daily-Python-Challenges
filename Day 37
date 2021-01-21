@@ -2,7 +2,7 @@
 i = True
 counter = 0
 while i == True:
-    string_input = input('Enter a number: ') 
+    string_input = input('Enter a number (blank to exit): ') 
     # Checking if input is a number
     try:
         number = float(string_input) 
@@ -12,3 +12,6 @@ while i == True:
         # Checking if input is a blank line
         if string_input == '':
             break
+        else:
+            # Error message
+            print('Invalid input')
