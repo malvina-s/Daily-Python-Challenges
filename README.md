@@ -36,3 +36,4 @@
 - Day 32: [_Scrabble<sup>TM</sup> Score_](https://github.com/malvina-s/Daily-Python-Challenges/blob/main/Day%2032)
 - Day 33: [_Create a BINGO card_](https://github.com/malvina-s/Daily-Python-Challenges/blob/main/Day%2033)
 - Day 35: [_Tail of a file_](https://github.com/malvina-s/Daily-Python-Challenges/blob/main/Day%2035)
+- Day 37: [_Sum a list of numbers_](https://github.com/malvina-s/Daily-Python-Challenges/blob/main/Day%2037)
