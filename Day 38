@@ -1,0 +1,37 @@
+#!/python3
+
+import sys
+
+# Check Command Line parameter filename
+try:
+    filename = sys.argv[1]
+except IndexError:
+    print("Usage:")
+    print("{} <filename>".format(sys.argv[0]))
+    sys.exit(1)
+
+# Check Command Line parameter new_filename
+try:
+    new_filename = sys.argv[2]
+except IndexError:
+    print("Usage:")
+    print("{} <new_filename>".format(sys.argv[0]))
+    sys.exit(2)
+    
+# Check file existence and open file
+try:
+    f = open(filename, 'r')
+except FileNotFoundError:
+    print("File '{}' does not exist".format(filename))
+    sys.exit(3)
+
+file_lines = f.readlines()
+f.close()
+new_f = open(new_filename, 'a')
+for i in len(file_lines):
+	line = file_lines[i]
+	line = strip()
+	if line[0] == '#':
+		new_f.write(line)
+new_f.close()
+
