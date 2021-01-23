@@ -1,0 +1,24 @@
+#!/python3
+import sys
+import random
+# Check Command Line parameter filename
+try:
+    filename = sys.argv[1]
+except IndexError:
+    print("Usage:")
+    print("{} <filename>".format(sys.argv[0]))
+    sys.exit(1)
+# Opening the file   
+f = open(filename, 'r')
+lines = f.readlines()
+f.close()
+character_count = 0
+while character_count < 8 or character_count > 10:
+    # picking two random words from the file
+    words = random.sample(lines, 2)
+    word_1 = words[0].capitalize()
+    word_2 = words[1].capitalize()
+    # creating the password
+    password = str(word_1.strip()) + str(word_2.strip())
+    character_count = len(password)
+print(password)
