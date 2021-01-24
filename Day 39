@@ -13,12 +13,12 @@ f = open(filename, 'r')
 lines = f.readlines()
 f.close()
 character_count = 0
-while character_count < 8 or character_count > 10:
+while character_count < 8 or character_count > 10 or len(word_1) < 3 or len(word_2) < 3:
     # picking two random words from the file
     words = random.sample(lines, 2)
-    word_1 = words[0].capitalize()
-    word_2 = words[1].capitalize()
+    word_1 = (words[0].capitalize()).strip()
+    word_2 = (words[1].capitalize()).strip()
     # creating the password
-    password = str(word_1.strip()) + str(word_2.strip())
+    password = word_1 + word_2
     character_count = len(password)
 print(password)
