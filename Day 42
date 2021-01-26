@@ -1,0 +1,52 @@
+#!/python3
+import sys
+import re
+print('This is a program that redacts all occurrences of sensitive words in a text file by replacing them with asterisks')
+# User input
+or_file = open(input('Enter the name of the file you want test for sensitive words: '), 'r')
+sens_file = open(input('Enter the name of the file that contains the words to redact: '), 'r')
+name = input('How you want to name the redacted file?: ')
+new_file = open(name, 'w')
+# Making the list of sensitive words
+w_list = []
+sens_list = sens_file.readlines()
+sens_file.close()
+for line in sens_list:
+	for word in line.split():
+		word = (''.join(filter(str.isalpha, word))).upper()
+		w_list.append(word)
+# Reading the original file
+or_file_lines = or_file.readlines()
+for line in or_file_lines:
+	# Testing if a new line was inserted
+	res = bool(re.search(r"\n", line))
+	if res == True:
+		flag2 = True
+	else:
+		flag2 = False
+	# Spliting the line into words 
+	for word in line.split():
+		flag = False
+		og_word = word
+		word = (''.join(filter(str.isalpha,word))).upper()
+		for w in w_list:
+				if w == word:
+				# Replacing a sensitive word with asterisks 
+					for ch in word:
+						word = word.replace(ch, '*')
+					# Writing asterisks to the new file if it's not sensitive
+					flag = True
+					new_file.write(str(word) + ' ')
+		# Writing the original word to the new file if it's not sensitive
+		if flag == False:
+			new_file.write(str(og_word) + ' ')
+	# inserting a new line if there was one in the original file
+	if flag2 == True:
+		new_file.write('\n')
+or_file.close()
+new_file.close()
+		
+
+
+	
+					
