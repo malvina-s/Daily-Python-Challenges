@@ -8,7 +8,7 @@ def missing_comments(filename):
 	f = open(filename, 'r')
 	line_list = f.readlines()
 	f.close()
-	prev_line = ''
+	prev_line = ' '
 	for line in line_list:
 		# Testing if a function is preceded by a comment
 		if line.startswith('def') and not(prev_line.startswith('#')):
@@ -18,9 +18,9 @@ def missing_comments(filename):
 			words = line.split()
 			function_name = words[1]
 			function_name = function_name.split('(')
-			prev_line = line
 			# Printing the output
 			print('In file {}, funtion {} in line {} is missing comments'.format(filename, function_name[0], index))
+		prev_line = line
 
 if __name__ == '__main__':
 	# Going through the command line arguments	
