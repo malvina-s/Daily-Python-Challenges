@@ -42,3 +42,4 @@
 - Day 40: [_A book with no E..._](https://github.com/malvina-s/Daily-Python-Challenges/blob/main/Day%2040)
 - Day 42: [_Redacting text in a file_](https://github.com/malvina-s/Daily-Python-Challenges/blob/main/Day%2042)
 - Day 43: [_Missing Comments_](https://github.com/malvina-s/Daily-Python-Challenges/blob/main/Day%2043)
+- Day 44: [_Total the values_](https://github.com/malvina-s/Daily-Python-Challenges/blob/main/Day%2044)
